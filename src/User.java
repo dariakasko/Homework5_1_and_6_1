@@ -6,6 +6,7 @@ public class User {
     private String password;
     public boolean isActive;
     public static double amountSpentMoney;
+    public String gitVar;
 
     public User() { //empty class constructor
     }
