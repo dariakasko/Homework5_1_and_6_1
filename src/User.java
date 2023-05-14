@@ -6,6 +6,7 @@ public class User {
     private String password;
     public boolean isActive;
     public static double amountSpentMoney;
+    public static int discount = (int)(Math.random() * 49 + 1);
 
     public User() { //empty class constructor
     }
@@ -56,6 +57,10 @@ public class User {
     public void printTotalAmountOfSpentMoney() {
         System.out.println(amountSpentMoney);
     }
+    public static double addDiscount(int percent) {
+        amountSpentMoney = amountSpentMoney - (amountSpentMoney * percent/100);
+        return amountSpentMoney;
+    }
     public void showUserData() {
         System.out.println("User name: " + userName );
         System.out.println("Age: " + age );
@@ -63,4 +68,5 @@ public class User {
         System.out.println("Password: " + password );
         System.out.println("");
     }
+
 }
