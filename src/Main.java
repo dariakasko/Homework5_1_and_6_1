@@ -8,5 +8,8 @@ public class Main {
 
         AdditionalUserClass.createUsers();
         System.out.println("\nAll users spent " + User.amountSpentMoney + "$");
+        System.out.println("Total discount is: " + User.discount + "%");
+        System.out.print("Total amount of spent money with discount: " + User.addDiscount(User.discount));
+
     }
 }
